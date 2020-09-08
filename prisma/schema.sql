@@ -1,0 +1,11 @@
+CREATE TABLE "public"."Visitor" (
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(255)
+);
+
+CREATE TABLE "public"."Post" (
+  id SERIAL PRIMARY KEY NOT NULL,
+  slug VARCHAR(255) NOT NULL,
+  likes INTEGER NOT NULL,
+  UNIQUE (slug)
+);
